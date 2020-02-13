@@ -11,3 +11,19 @@
     <text class="user-motto">{{motto}}</text>
   </view>
 </view>
+<view>
+  <!-- 按钮大小 -->
+  <button size="mini">按钮</button>
+  <!-- 镂空效果 -->
+  <button size="mini" plain>镂空</button>
+  <!-- 是否禁用 -->
+  <button size="mini" disabled>禁用</button>
+  <!-- 是否显示加载 -->
+  <button size="mini" loading="{{isLoading}}" bind:tap="handleBtnClick">{{btn_content}}</button>
+  <!-- 点击样式 -->
+  <button size="mini" hover-class="btn-tap">样式</button>
+  <!-- 停留多久出现点击状态，点击状态停留时间 -->
+  <button size="mini" hover-start-time="2000" hover-stay-time="3000">时间</button>
+
+  <button size="mini" lang="en" open-type="getUserInfo" bindgetuserinfo="getUserInfo">按钮</button>
+</view>
