@@ -11,3 +11,14 @@
     <text class="user-motto">{{motto}}</text>
   </view>
 </view>
+<!-- 1.默认值为false的属性，只写属性名称则代表值为true，不写为false -->
+<view>
+  <text>这里是测试内容</text>
+  <text selectable="{{true}}">少年不知愁滋味，爱上层楼\n</text>
+  <text selectable="{{false}}">爱上层楼，为赋新词强说愁\n</text>
+  <text selectable>而今识尽愁滋味，欲说还休\n</text>
+  <text>欲说还休，却道天凉好个秋\n</text>
+  <text decode>辛弃疾&gt;&gt;\n</text>
+  <text>辛弃疾&gt;&gt;</text>
+</view>
+<!-- 三个属性：selectable、space、decode -->
