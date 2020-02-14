@@ -1,13 +1,16 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<view>
+  <image src="/images/test.jpg" mode="widthFix" style="width:750rpx"></image>
+    <image src="/images/test.jpg" mode="aspectFit" style="width:375px"></image>
+  <image src="/images/test.jpg" mode="aspectFill"></image>
+  <image src="/images/test.jpg" mode="heightFix"></image>
+<image src="/images/test.jpg" mode="top"></image>
+<image src="/images/test.jpg" mode="bottom"></image>
+<image src="/images/test.jpg" mode="center"></image>
+<image src="/images/test.jpg" mode="left"></image>
+<image src="/images/test.jpg" mode="right"></image>
+<image src="/images/test.jpg" mode="top left"></image>
+<!-- <image src="/images/test.jpg" mode="right top"></image> -->
+<!-- tip：image组件默认宽度300px，高度225px -->
+<!-- 小程序屏幕宽度均为750rpx -->
 </view>
