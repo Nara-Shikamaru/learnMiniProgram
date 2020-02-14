@@ -1,5 +1,5 @@
 /**index.wxss**/
-.btn-tap{
+.click{
   background:rgb(243, 114, 9);
   color:white;
 }
